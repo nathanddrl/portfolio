@@ -7,6 +7,7 @@ import AboutSection from "../../components/Home/AboutSection";
 import SkillsSection from "../../components/Home/SkillsSection";
 import ProjectsSection from "../../components/Home/ProjectsSection";
 import ContactSection from "../../components/Home/ContactSection";
+import { Footer } from "../../components/Footer";
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App font-sans">
       {isLoading ? (
         <Loader />
       ) : (
@@ -51,7 +52,9 @@ function App() {
               <ContactSection />
             </section>
           </main>
-          <footer></footer>
+          <footer>
+            <Footer />
+          </footer>
         </div>
       )}
     </div>

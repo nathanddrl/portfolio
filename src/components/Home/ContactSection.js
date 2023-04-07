@@ -1,7 +1,28 @@
 import React from 'react';
 import '../../styles/index.css'
+import axios from 'axios';
+
 
 const ContactSection = () => {
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  
+    try {
+      await axios.post('http://localhost:3001/send-email', {
+        name: event.target.name.value,
+        email: event.target.email.value,
+        message: event.target.message.value,
+      });
+  
+      // Réinitialisez les champs de formulaire et affichez un message de succès
+    } catch (error) {
+      console.error(error);
+      // Affichez un message d'erreur
+    }
+  };
+
+
   return (
     <div className="bg-neutral-100 py-16 w-4/5 mx-auto">
       <div className="container mx-auto px-4">
@@ -11,7 +32,7 @@ const ContactSection = () => {
         <p className="text-neutral-800 text-lg mb-6">
           Si vous avez des questions, des propositions de projets ou si vous souhaitez simplement me contacter, n'hésitez pas à remplir le formulaire ci-dessous ou à me contacter via les réseaux sociaux.
         </p>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="input-container">
             <input
               className="input-field"
@@ -50,7 +71,7 @@ const ContactSection = () => {
           </div>
           <button
             type="submit"
-            className="bg-accent text-primary font-semibold py-2 px-8 rounded-md hover:bg-primary hover:text-neutral-100 transition-colors duration-300"
+            className="contained-button bg-accent-500 font-semibold hover:bg-accent-400"
           >
             Envoyer
           </button>

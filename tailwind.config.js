@@ -38,6 +38,10 @@ module.exports = {
           900: "#032624",
         },
       },
+      fontFamily: {
+        sans: ["Lato", "sans-serif"],
+        title: ["Oswald", "sans-serif"],
+      },
     },
   },
   plugins: [],

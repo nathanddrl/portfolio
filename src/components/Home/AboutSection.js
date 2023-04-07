@@ -13,7 +13,7 @@ const AboutSection = () => {
           </div>
           <div>
             <p className="text-primary-800 text-lg mb-6">
-              Je suis un développeur web passionné avec 2 années d'expérience dans la création de solutions web. J'ai travaillé avec diverses technologies et langages de programmation et Framework, tels que <span className='text-accent-500'>PHP, Laravel, React, Node.js, HTML, CSS et JavaScript</span>.
+              Hey, moi c'est <bold>Nathan Dudreuil</bold>, je suis un développeur web passionné avec 2 années d'expérience dans la création de solutions web. J'ai travaillé avec diverses technologies et langages de programmation et Framework, tels que <span className='text-accent-500'>PHP, Laravel, React, Node.js, HTML, CSS et JavaScript</span>.
             </p>
             <p className="text-primary-800 text-lg mb-6">
               J'ai un <span className='text-accent-500'>DUT en Métier du Multimédia et de l'Internet</span> de l'IUT de Béziers. Mon objectif est de continuellement apprendre afin d'approfondir mes connaissances pour offrir les meilleurs produits et le meilleur service produit.
