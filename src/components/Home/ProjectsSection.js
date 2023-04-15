@@ -4,7 +4,7 @@ const ProjectsSection = () => {
   return (
     <div className="w-full py-16 flex flex-col justify-around items-center bg-accent-100">
       <div className="w-5/6 flex flex-col justify-around items-center">
-        <h1 className="text-4xl">Mes réalisation et projets</h1>
+        <h1 className="text-4xl font-title font-semibold">Mes réalisation et projets</h1>
         <div className="w-5/6 flex justify-around items-center align-center text-center">
           <p className="text-lg text-justify text-primary-900 mt-8">
           Depuis que j'ai commencé à développer j'ai eu l'occasion de réaliser et participer à la réalisation de plusieurs projets.

@@ -1,32 +1,33 @@
 import React from 'react';
 import '../../styles/index.css'
-import axios from 'axios';
+// import axios from 'axios';
 
 
 const ContactSection = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    alert('Merci '+ event.target.name.value + ' pour votre message !');
+
+    // try {
+    //   await axios.post('http://localhost:3001/send-email', {
+    //     name: event.target.name.value,
+    //     email: event.target.email.value,
+    //     message: event.target.message.value,
+    //   });
   
-    try {
-      await axios.post('http://localhost:3001/send-email', {
-        name: event.target.name.value,
-        email: event.target.email.value,
-        message: event.target.message.value,
-      });
-  
-      // Réinitialisez les champs de formulaire et affichez un message de succès
-    } catch (error) {
-      console.error(error);
-      // Affichez un message d'erreur
-    }
+    //   // Réinitialisez les champs de formulaire et affichez un message de succès
+    // } catch (error) {
+    //   console.error(error);
+    //   // Affichez un message d'erreur
+    // }
   };
 
 
   return (
     <div className="bg-neutral-100 py-16 w-4/5 mx-auto">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl text-primary font-bold mb-8">
+        <h2 className="text-3xl md:text-4xl text-primary font-semibold font-title mb-8">
           Contactez-moi
         </h2>
         <p className="text-neutral-800 text-lg mb-6">

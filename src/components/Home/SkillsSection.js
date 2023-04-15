@@ -4,10 +4,10 @@ const SkillsSection = () => {
   return (
     <div className="py-16 w-full text-center bg-primary-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl text-primary font-bold mb-8">
+        <h2 className="text-3xl md:text-4xl text-primary font-semibold mb-8 font-title">
           Mes compétences
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex flex-col md:flex-row justify-around items-center gap-8 text-left">
           {/* Soft Skills */}
           <div>
             <h3 className="text-2xl text-accent font-semibold mb-4">
@@ -34,7 +34,8 @@ const SkillsSection = () => {
               <li>React, React Native, Node.js</li>
               <li>Clean code et bonne pratiques</li>
               <li>Git, GitLab, GitHub</li>
-              <li>Responsive Design</li>
+              <li>Wordpress</li>
+              
             </ul>
           </div>
 

@@ -36,10 +36,10 @@ function App() {
             <TopMenu />
           </header>
           <main>
-            <section id="home" className="w-full h-screen flex justify-center items-center bg-primary-100">
+            <section id="home" className="w-full flex justify-center items-center bg-primary-100">
               <WelcomeSection />
             </section>
-            <section id="about" className="w-full h-screen flex bg-neutral-100">
+            <section id="about" className="w-full flex bg-neutral-100">
               <AboutSection />
             </section>
             <section id="skills" className="w-full flex ">
